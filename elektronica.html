@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="css/style.css">
+    <link rel="Stylesheet" type="text/css" href="css/elektronica.css">
+    <script src="https://kit.fontawesome.com/ea984401d2.js" crossorigin="anonymous"></script>
+    <title> Examen website </title>
+</head>
+<body>
+<div id="main">
+    <!-- Header -->
+    <div id="header">
+        <a id="header-text" href="index.html"> Examen website </a>
+        <ul id="header-list">
+            <li><button id="header-button"><a href="animatie.html"> Animatie </a></button></li>
+            <li><button id="header-button"><a href="elektronica.html"> Elektronica </a></button></li>
+            <li><button id="header-button"><a href="info.html"> Info </a></button></li>
+        </ul>
+    </div>
+    <!-- Content -->
+    <div id="col">
+        <h2 id="col-title"> Combinatieslot </h2> <br>
+        In deze project laat ik zien hoe je een combinatieslot kunt maken met een Arduino. <br>
+        <h2> Benodigheden </h2>
+           <ul> 
+            <li> Arduino UNO </li>
+            <li> Drukknop x6 </li>
+            <li> Rode x7 </li>
+            <li> Groene LED </li>
+            <li> Jump Wires </li>
+            <li> Breadboard </li>
+           </ul>
+           <h2> Doel </h2>
+           Het project zal ons helpen om het combinatiewachtwoord in te stellen en u kunt het wachtwoord instellen met behulp van 1-6 cijfers. <br>
+           Wanneer u op de knoppen drukt en de combinatie overeenkomt, gaat de groene LED branden en als de combinatie niet overeenkomt, gaat de rode LED geeft aan dat het wachtwoord onjuist is. <br>
+           <video muted autoplay loop src="img/video.mp4"></video> <br>
+            <h2> Stappenplan </h2>
+            <ul>
+            <li>
+            <h3> Stap 1 : Breadbord <br></h3>
+                Verbind de Arduino met een breadbord <br>
+                <img src="img/plan/Picture1.png">
+            </li>
+            <li>
+            <h3> Stap 2 : Rode & Groene LEDs <br></h3>
+                Verbind de rode en groene LEDs op pin 9 – 8 <br>
+                <img src="img/plan/Picture2.png">
+            </li>
+            <li>
+            <h3> Stap 3 : Knoppen met Grounding <br></h3>
+                Verbindt de 6 knoppen met de grounding  <br>
+                <img src="img/plan/Picture3.png">   
+            </li>
+            <li> 
+            <h3> Stap 4 : Knoppen met Pins <br> </h3>
+                Verbind de 6 knoppen met de pins 2-7 <br>
+                <img src="img/plan/Picture4.png">
+            </li>
+            <li> 
+            <h3> Stap 5 : De LEDs <br> </h3>
+                Plaats de LEDs op de breadbord <br>
+                <img src="img/plan/Picture5.png">
+            </li> 
+            <li>
+            <h3> Stap 6 : LEDs met pins <br> </h3>
+                Verbind de LEDs met de pins A0 – A5 <br>
+                <img src="img/plan/Picture6.png">
+            </li>
+            <li>
+            <h3> Stap 7 : Code</h3>
+                Kopieer het code en test het project even uit
+            </li>
+            </ul>
+            <h2> Code </h2>
+            <iframe src="https://onedrive.live.com/embed?cid=A3C28DF02E171AD6&amp;resid=A3C28DF02E171AD6%2122775&amp;authkey=AMvOFUTec79e7sU&amp;em=2" width="700px" height="500px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+    <ul> 
+        <h2> Planning </h2>
+        <li> 2 - 6 mei: Idee bedenken en proberen </li>
+        <li> 9 - 13 mei: 2de idee bedenken en proberen </li>
+        <li> 16 - 20 mei: 2de idee volledig uitwerken tot een prachtige project </li>
+        <li> 23 - 27 mei: Word-doc invullen en website maken </li>
+   </ul>
+   <h3> BurndownChart </h3>
+   <img src="img/burndownchart.png" alt="burndownchart">
+    </div>
+     
+</div>
+</body>
+
+</html>
