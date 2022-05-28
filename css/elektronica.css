@@ -1,11 +1,14 @@
 #col {
-    top: 65%;
+    top: 270%;
 }
 #header-text {
     margin-left: 2rem;
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
 }
-embed {
-    margin-top: 2rem;
+video {
+    width: 50%;
+}
+li {
+    list-style: none;
 }
