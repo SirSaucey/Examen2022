@@ -1,0 +1,13 @@
+ul li {
+    list-style: none;
+}
+img {
+    width: 20%;
+}
+#overlayed {
+    display: flex;
+    align-items: right;
+}
+.footer {
+    margin-top: 22rem;
+}
