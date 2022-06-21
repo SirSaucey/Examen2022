@@ -6,44 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" type="text/css" href="css/style.css">
     <script src="js/index.js"></script>
-    <script src="js/prism.js"></script>
     <script src="https://kit.fontawesome.com/ea984401d2.js" crossorigin="anonymous"></script>
     <title> Examen website </title>
 </head>
 <body>
 <div id="main">
-        <!-- Loading Screen -->
-    <body onload="myFunction()" style="margin:0;">
-    <div id="loader"></div>
-    
-    <div style="display:none;" id="myDiv" class="animate-bottom">
     <!-- Header -->
     <div id="header">
         <a id="header-text" href="index.html"> Examen website </a>
-        <ul id="header-list">
-            <li><button id="header-button"><a href="animatie.html"> Animatie </a></button></li>
-            <li><button id="header-button"><a href="elektronica.html"> Elektronica </a></button></li>
-            <li><button id="header-button"><a href="info.html"> Info </a></button></li>
-        </ul>
+        <menu class="menu">
+            <button class="menu__item" style="--bgColorItem: #ff8c00;"><a href="animatie.html"><i class="fa-solid fa-user-astronaut"></i></a></button>
+            <button class="menu__item" style="--bgColorItem: #f54888;"><a href="elektronica.html"><i class="fa-solid fa-bolt"></i></a></button>
+            <button class="menu__item" style="--bgColorItem: #4343f5;"><a href="info.html"><i class="fa-solid fa-info"></i></a></button>
+        </menu>
     </div>
     <!-- Content -->
     <div id="col">
-        <h2 id="col-title"> Eindwerk Webtechnieken </h2> <br>
-        <a> 
+        <a id="header-text"> Eindwerk examen 2022 </a> <br>
+        <a>
             Dit is de website die ik heb gemaakt voor het examen Webtechnieken. <br>
             Op deze site kunt u kennis maken met 2 andere projecten: <br>
             Een animatie voor Software Ontwikkeling en een Arduino project voor ICT & Elektronica.
         </a>
-
-            <!-- Carrousel -->
-            <div id="content">
-                <div id="images">
-                <img src="img/animatie.png">
-                <img src="img/astronaut.png">
-                <img src="img/schema.png">
-                <img src="img/e-schema.png">
-                <img src="img/burndownchart.png">
-                </div>
+        <!-- Carrousel -->
+        <div id="content">
+            <div id="images">
+            <img src="img/animatie.png">
+            <img src="img/astronaut.png">
+            <img src="img/schema.png">
+            <img src="img/e-schema.png">
+            <img src="img/burndownchart.png">
             </div>
         </div>
     </div>

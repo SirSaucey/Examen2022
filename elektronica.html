@@ -14,11 +14,11 @@
     <!-- Header -->
     <div id="header">
         <a id="header-text" href="index.html"> Examen website </a>
-        <ul id="header-list">
-            <li><button id="header-button"><a href="animatie.html"> Animatie </a></button></li>
-            <li><button id="header-button"><a href="elektronica.html"> Elektronica </a></button></li>
-            <li><button id="header-button"><a href="info.html"> Info </a></button></li>
-        </ul>
+        <menu class="menu">
+            <button class="menu__item" style="--bgColorItem: #ff8c00;"><a href="animatie.html"><i class="fa-solid fa-user-astronaut"></i></a></button>
+            <button class="menu__item active" style="--bgColorItem: #f54888;"><a href="elektronica.html"><i class="fa-solid fa-bolt"></i></a></button>
+            <button class="menu__item" style="--bgColorItem: #4343f5;"><a href="info.html"><i class="fa-solid fa-info"></i></a></button>
+        </menu>
     </div>
     <!-- Content -->
     <div id="col">
@@ -84,7 +84,7 @@
         <li> 23 - 27 mei: Word-doc invullen en website maken </li>
    </ul>
    <h3> BurndownChart </h3>
-   <img src="img/burndownchart.png" alt="burndownchart">
+   <img src="img/burndownchart.png" id="a" alt="burndownchart">
     </div>
      
 </div>

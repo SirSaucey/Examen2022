@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="Stylesheet" type="text/css" href="css/style.css">
-    <link rel="Stylesheet" type="text/css" href="css/logboek.css">
+    <link rel="Stylesheet" type="text/css" href="css/info.css">
+    <script src="js/prism.js"></script>
     <script src="https://kit.fontawesome.com/ea984401d2.js" crossorigin="anonymous"></script>
     <title> Examen website </title>
 </head>
@@ -14,23 +15,37 @@
     <!-- Header -->
     <div id="header">
         <a id="header-text" href="index.html"> Examen website </a>
-        <ul id="header-list">
-            <li><button id="header-button"><a href="animatie.html"> Animatie </a></button></li>
-            <li><button id="header-button"><a href="elektronica.html"> Elektronica </a></button></li>
-            <li><button id="header-button"><a href="info.html"> Info </a></button></li>
-        </ul>
+        <menu class="menu">
+            <button class="menu__item" style="--bgColorItem: #ff8c00;"><a href="animatie.html"><i class="fa-solid fa-user-astronaut"></i></a></button>
+            <button class="menu__item" style="--bgColorItem: #f54888;"><a href="elektronica.html"><i class="fa-solid fa-bolt"></i></a></button>
+            <button class="menu__item active" style="--bgColorItem: #4343f5;"><a href="info.html"><i class="fa-solid fa-info"></i></a></button>
+        </menu>
     </div>
     <!-- Content -->
     <div id="col">
-        <h2 id="col-title"> Logboek </h2> <a href="https://www.youtube.com/watch?v=Y9iMSeAigPw&t=30s" target="blank_"> (click for my socials) </a><br> 
+        <h2 id="col-title"> Logboek </h2> <br> 
         <a> 
             Dit is de logboek/planning van mijn ICT & Elektronica Arduino project <br>
         </a>
         <embed src="img/logboek.pdf" width="800px" height="800px">
 
     </div>
-     
 </div>
+<div class="container">
+    <h2 id="headline"> Countdown to my birthday </h2>
+    <div id="countdown">
+      <ul>
+        <li><span id="days"></span>days</li>
+        <li><span id="hours"></span>Hours</li>
+        <li><span id="minutes"></span>Minutes</li>
+        <li><span id="seconds"></span>Seconds</li>
+      </ul>
+    </div>
+    <div id="content" class="emoji">
+      <span>🥳</span>
+      <span>🎉</span>
+      <span>🎂</span>
+    </div>
+  </div>
 </body>
-
 </html>
