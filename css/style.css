@@ -7,6 +7,9 @@ body,html {
     line-height: 1.6;
     scroll-behavior: smooth;
     background-image: url(/img/background.jpg);
+    box-sizing: border-box;
+    --duration: .7s;    
+
 }
     /* Variables */
 :root {
@@ -60,52 +63,9 @@ h3 {font-size: var(--fs-h3) }
 	background: var(--accent);
 }
 
-    /* Loading Screen */
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
-  margin: -76px 0 0 -76px;
-  border: 3px solid var(--accent);
-  border-top: 3px solid transparent;
-  border-radius: 50%;
-  animation: spin 3s linear 0s infinite;
-  -webkit-animation: spin 3s linear 0s infinite;
+* {
+  display: flexbox;
 }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
   /* Lists Decoration */
 a {
     font-style: none;
@@ -119,27 +79,81 @@ a {
     border-bottom: 1px solid white;
 }
 #header-text {
-    margin-left: -60rem;
+    margin-left: 2rem;
     font-size: var(--fs-h2);
     font-weight: var(--fw-bold);
 }
-#header-list {
-    list-style: none;
-    float: right;
-    margin-right: 2rem;
-    display: flex;
+
+/* Menu */
+.menu {
+
+  margin: 0;
+  display: flex;
+  /* Works well with 100% width  */
+  width: 15em;
+  font-size: 1.5em;
+  padding: 0 2.85em;
+  position: relative;
+  float: right;
+  align-items: center;
+  justify-content: center;
+  
 }
-#header-button {
-    background: var(--dark);
-    color: var(--light);
-    font-size: var(--fs-h4);
-    font-weight: var(--fw-bold);
+
+.menu__item{
+  all: unset;
+  flex-grow: 2;
+  z-index: 100;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  align-items: center;
+  will-change: transform;
+  justify-content: center;
+  padding: 0.55em 0 0.85em;
+  
 }
+
+.menu__item::before{
+  content: "";
+  z-index: -1;
+  width: 2em;
+  height: 2em;
+  border-radius: 100%;
+  position: absolute;
+  transform: scale(0);
+  transition: background-color var(--duration), transform var(--duration);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+
+.menu__item.active {
+  transform: translate3d(0, -0.3em , 0);
+  -webkit-transform: translate3d(0, -0.3em , 0);
+  -moz-transform: translate3d(0, -0.3em , 0);
+  -ms-transform: translate3d(0, -0.3em , 0);
+  -o-transform: translate3d(0, -0.3em , 0);
+}
+
+.menu__item.active::before{
+  transform: scale(1);
+  background-color: var(--bgColorItem);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+
 /* Content */
 #col {
     position: absolute;
     display: inline-block;
-    top: 350%;
+    top: 10rem;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -161,7 +175,11 @@ a {
     width: 750px;
     overflow: hidden;
     box-shadow: 0px 0px 500px 5px var(--light);
-  }
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
   #content #images{
     height: 100%;
     width: 100%;
@@ -170,3 +188,24 @@ a {
     height: 100%;
     width: 100%;
   }
+
+/* Responsive */
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  #header {
+    width: 100%;
+  }
+  #col {
+    margin-top: 20rem;
+    height: 50%;
+    width: 50%;
+  }
+  
+  #col #content {
+    margin-top: -30rem;
+    width: 100%;
+  }
+  .menu {
+    left: 1em;
+  }
+}

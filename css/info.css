@@ -1,0 +1,79 @@
+#col {
+    top: 65%;
+}
+#header-text {
+    margin-left: 2rem;
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-bold);
+}
+embed {
+    margin-top: 2rem;
+}
+  /* Countdown */
+  .container {
+    color: #4343f5;
+    margin: 0 auto;
+    text-align: center;
+    display: table-row;
+    font-size: 1em;
+  }
+  .headline {
+    font-size: 2em;
+  }
+  h2 {
+    font-weight: normal;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  li {
+    display: inline-block;
+    font-size: 1em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+    display: block;
+    font-size: 4.5rem;
+    font-size: 1em;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+    
+/* Responsive */
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    #col {
+      margin-top: -10rem;
+      height: 50%;
+      width: 50%;
+    }
+    #col #content {
+      margin-top: -30rem;
+      width: 100%;
+    }
+  }

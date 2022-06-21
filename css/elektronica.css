@@ -1,5 +1,5 @@
 #col {
-    top: 270%;
+    top: 250%;
 }
 #header-text {
     margin-left: 2rem;
@@ -12,3 +12,22 @@ video {
 li {
     list-style: none;
 }
+#a {
+    width: 70%;
+}
+/* Responsive */
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    #col {
+      margin-top: -115rem;
+      height: 50%;
+      width: 50%;
+    }
+    video {
+        width: 200%;
+    }
+    #col #content {
+      margin-top: -30rem;
+      width: 100%;
+    }
+  }
